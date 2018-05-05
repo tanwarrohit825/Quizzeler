@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#89C4F4"
+    android:background="#19B5FE"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +15,7 @@
         android:gravity="center_horizontal"
         android:text="@string/question_1"
         android:textAllCaps="true"
-        android:textColor="@android:color/background_light"
+        android:textColor="#663399"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="monospace"
@@ -22,7 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.085"
+        android:background="#95A5A6"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -42,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#006442"
+            android:background="#00e640"
             android:text="@string/true_button"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -52,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#DC3023"
+            android:background="#f03434"
             android:text="@string/false_button"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -70,7 +72,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/initial_score"
         android:textAllCaps="true"
-        android:textColor="@android:color/background_light"
+        android:textColor="#3A539B"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -78,7 +80,8 @@
         app:layout_constraintHorizontal_bias="0.974"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.595" />
+        app:layout_constraintVertical_bias="0.595"
+        android:background="#C8F7C5"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -91,7 +94,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:background="#FFB61E"
+        android:background="#F7CA18"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
