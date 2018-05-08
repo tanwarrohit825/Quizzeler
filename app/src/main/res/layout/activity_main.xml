@@ -47,7 +47,8 @@
             android:background="#00e640"
             android:text="@string/true_button"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="trueb"/>
 
         <Button
             android:id="@+id/falseButton"
@@ -57,7 +58,8 @@
             android:background="#f03434"
             android:text="@string/false_button"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="flase"/>
     </LinearLayout>
 
     <TextView
