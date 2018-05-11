@@ -6,8 +6,8 @@ public class TrueFalse {
     private  boolean ans;
 
     public TrueFalse(int qution ,boolean ans) {
-        qution = qution;
-        ans = ans;
+        this.qution = qution;
+        this.ans = ans;
     }
 
     public int getQution() {

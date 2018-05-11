@@ -11,7 +11,8 @@
     <TextView
         android:id="@+id/showQution"
         android:layout_width="0dp"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
+        android:background="#95A5A6"
         android:gravity="center_horizontal"
         android:text="@string/question_1"
         android:textAllCaps="true"
@@ -23,8 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085"
-        android:background="#95A5A6"/>
+        app:layout_constraintVertical_bias="0.085" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

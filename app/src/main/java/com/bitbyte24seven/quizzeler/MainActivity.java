@@ -1,19 +1,20 @@
 package com.bitbyte24seven.quizzeler;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     int Index;
     int mQuestion;
+    TextView showQution;
 
     //make the qutionn bank
 
-    private  TrueFalse[] qutionBank = new TrueFalse[]{
+    private  TrueFalse[] mqutionBank = new TrueFalse[]{
             new TrueFalse(R.string.question_1,true),
             new TrueFalse(R.string.question_2,true),
             new TrueFalse(R.string.question_3,true),
@@ -36,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
         Button trueButton =  findViewById(R.id.tureButton);
         Button falseButton = findViewById(R.id.falseButton);
-        TextView showQution = findViewById(R.id.showQution);
+        showQution = findViewById(R.id.showQution);
 
-
-        TrueFalse firstQution = qutionBank[Index];
-        mQuestion = firstQution.getQution();
+        mQuestion = mqutionBank[Index].getQution();
         showQution.setText(mQuestion);
+
+
 
 //        //type 1 onclick listener
 //        View.OnClickListener myLister = new View.OnClickListener() {
@@ -69,12 +70,22 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
 
-
     }
 
+
     public void flase(View view) {
+        updateQution();
     }
 
     public void trueb(View view) {
+        updateQution();
     }
+
+    private  void updateQution (){
+        Index = Index+1;
+        //Index++;
+        mQuestion = mqutionBank[Index].getQution();
+        showQution.setText(mQuestion);
+    }
+
 }
